@@ -1806,6 +1806,7 @@ Therefore, we must explicitly convert the output with SQLGlot's `exp.Literal.str
 
 ```python linenums="1" hl_lines="5"
 from sqlmesh import macro
+import sqlglot.expressions as exp
 
 @macro()
 def repeat_string(evaluator, text: str, count: int):
